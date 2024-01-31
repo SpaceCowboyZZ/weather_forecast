@@ -8,7 +8,6 @@ app = FastAPI()
 
 
 
-
 @app.get('/city/{city_name}/')
 def get_city(city: str):
     url = f'http://api.openweathermap.org/geo/1.0/direct?q={city}&limit={5}&appid={api_key}'
